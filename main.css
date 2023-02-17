@@ -2,7 +2,7 @@ body{
     background-color: dimgray;
     font-family: Arial;
 }
-p, h1, footer, h2{
+p, h1, footer, h2, li{
     color: white;
 }
 
@@ -11,9 +11,10 @@ p, h1, footer, h2{
 }
 
 
+
 #grid-container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 500px auto;
 }
 
 #grid-container > div{
@@ -24,7 +25,7 @@ p, h1, footer, h2{
 
 #griddy{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 600px auto;
 }
 
 h1{
@@ -58,4 +59,12 @@ th, td{
 .second{
     background-color: lightblue;
     color: black;
+}
+
+a:link{
+    color:lightblue;
+}
+
+a:visited{
+    color:lightskyblue;
 }

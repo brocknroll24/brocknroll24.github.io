@@ -1,4 +1,24 @@
-*{
-    background-color: forestgreen;
+body{
+    background-color: slategray;
     color: aquamarine;
+    font-family: "Comic Sans MS";
+}
+
+#obelisk{
+    width: 700px;
+}
+
+#abilities table{
+    border: 3px solid purple;
+    background-color: purple;
+}
+
+#abilities th, #abilities td{
+    border: 3px solid purple;
+    background-color: mediumpurple;
+    color: black;
+}
+
+#achievements{
+    background-color: darkslateblue;
 }
