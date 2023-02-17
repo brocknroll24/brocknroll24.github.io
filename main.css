@@ -1,7 +1,33 @@
 *{
     background-color: dimgray;
+    font-family: Arial;
 }
 
-p, h1{
+p, h1, footer, h2{
     color: white;
+}
+
+#merc{
+    position: relative;
+    left: 10px;
+    up: 1000px;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#grid-container > div{
+    text-align: center;
+    border: 3px;
+    padding: 20px;
+}
+
+#grid-container > div > img{
+    text-align: left;
+}
+
+h1{
+    font-size: xxx-large;
 }
