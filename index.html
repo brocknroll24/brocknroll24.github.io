@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>The Main Website</title>
+        <link id='csslink' rel="stylesheet" href="main.css" />
+        <script>
+            function toggleCSS() {
+                // Obtains the <link> element that links to the css (by using its id).
+                var currentCSS = document.getElementById('csslink');
+
+                // Change the value of href attribute to change the css file.
+                if (currentCSS.getAttribute('href') == 'main.css') {
+                    currentCSS.setAttribute('href', 'alternate.css');
+                } else {
+                    currentCSS.setAttribute('href', 'main.css');
+                }
+            }
+        </script>
     </head>
     <body>
-        <p>hinga dinga</p>
+        <h1>Welcome to The Website</h1>
+        <button onclick="toggleCSS()">Switch Style</button>
     </body>
 </html>
