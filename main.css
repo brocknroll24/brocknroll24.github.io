@@ -1,17 +1,15 @@
-*{
+body{
     background-color: dimgray;
     font-family: Arial;
 }
-
 p, h1, footer, h2{
     color: white;
 }
 
-#merc{
-    position: relative;
-    left: 10px;
-    up: 1000px;
+#obelisk{
+    width: 700px;
 }
+
 
 #grid-container{
     display: grid;
@@ -24,10 +22,40 @@ p, h1, footer, h2{
     padding: 20px;
 }
 
-#grid-container > div > img{
-    text-align: left;
+#griddy{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 h1{
     font-size: xxx-large;
+}
+
+table{
+    color: white;
+    background-color: black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+tr{
+    padding: 10px;
+}
+
+th, td{
+    border: 3px black solid;
+    border-bottom: 0;
+    border-left: 0;
+    padding: 10px;
+}
+
+
+
+.first{
+    background-color: darkslateblue;
+    color: white;
+}
+.second{
+    background-color: lightblue;
+    color: black;
 }
