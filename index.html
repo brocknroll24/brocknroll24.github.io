@@ -3,6 +3,8 @@
     <head>
         <title>The Main Website</title>
         <link id='csslink' rel="stylesheet" href="main.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
             function toggleCSS() {
                 // Obtains the <link> element that links to the css (by using its id).
@@ -18,10 +20,33 @@
         </script>
     </head>
     <body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#whoIs">Who Is</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#howUnlock">How to Unlock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#abilities">Abilities</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header>
         <div id="grid-container">
-        <div><h1>Mercenary Risk of Rain Fanpage</h1></div>
-        <div><img src="Mercenary.webp" id="merc"></div>
+        <div id="top" style="margin-top: 80px"><h1>Mercenary Risk of Rain Fanpage</h1></div>
+        <div><img src="Mercenary.webp" id="merc" style="margin-top: 40px"><br></div>
         </div>
     </header>
         <div id="whoIs">
@@ -43,7 +68,7 @@
         </div>
     <div id="abilities">
         <h2>Abilities</h2>
-        <table style="width: 50%">
+        <table style="width: 50%" class="table table-bordered table-hover table-responsive-md">
             <tr class="first">
                 <th style="width: 12%">Ability</th>
                 <th style="width:33%">Description</th>
@@ -125,6 +150,43 @@
     </body>
 
     <h2>More to see</h2>
+    <p>All images can be clicked for their sources.</p>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://www.artstation.com/artwork/0na1Aw"><img src="rodrigo-faria-cattonaut-risk-of-rain-mercenary.jpg" alt="Los Angeles" class="d-block w-50 mx-auto"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.reddit.com/r/riskofrain/comments/e8t9vj/risk_of_rain_oni_mercenary_art_i_made_part_2_of_2/"><img src="oniart1.webp" alt="Chicago" class="d-block w-33 mx-auto"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.artstation.com/artwork/VdRRNR"><img src="aurthur-mercader-mercenary.jpg" alt="Chicago" class="d-block w-50 mx-auto"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.reddit.com/r/riskofrain/comments/mqr7rh/mercenary/"><img src="zmbq43a8b5t61.webp" alt="Chicago" class="d-block w-50 mx-auto"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.reddit.com/r/riskofrain/comments/mqr7rh/mercenary/"><img src="p2hc8ssp1bt41.webp" alt="New York" class="d-block w-50 mx-auto"></a>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
     <a href="https://riskofrain2.fandom.com/wiki/Mercenary">Risk of Rain 2 Wiki- Mercenary<br></a>
     <a href="https://www.reddit.com/r/ror2/comments/ercs1e/mercenary_fanart_by_me/"><img src="wowie.jpg" alt="cooldrawing" width="900"><br>A cool looking drawing</a>
     <footer>I don't actually own any of this legally, but I wrote the code Brock Kern©</footer>

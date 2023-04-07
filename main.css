@@ -2,7 +2,7 @@ body{
     background-color: dimgray;
     font-family: Arial;
 }
-p, h1, footer, h2, li{
+p, h1, footer, h2{
     color: white;
 }
 
@@ -33,7 +33,6 @@ h1{
 }
 
 table{
-    color: white;
     background-color: black;
     border-bottom: 3px solid black;
     border-left: 3px solid black;
